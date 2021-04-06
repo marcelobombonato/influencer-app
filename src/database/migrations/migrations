@@ -1,0 +1,5 @@
+yarn sequelize db:create
+yarn sequelize migration:create --name=create-users
+yarn sequelize migration:create --name=create-socialnetworks
+
+yarn sequelize db:migrate
