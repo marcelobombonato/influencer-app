@@ -6,7 +6,7 @@ const User = require('./models/User');
 const routes = express.Router();
 
 routes.post('/users', UserController.store);
-routes.get('/users', UserController.index);
+routes.get('/', UserController.teste);
 routes.post('/users/:user_id/social-networks', SocialNetworkController.store);
 routes.get('/social-networks', SocialNetworkController.index);
 
